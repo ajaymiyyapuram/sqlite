@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" id="org.pgsqlite" version="1.0.0">
+    <name>Sqlite</name>
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+         <js-module src="www/SQLitePlugin.js" name="SQLite">
+            <clobbers target="SQLite" />
+        </js-module>
+	<platform name="android">
+		<config-file target="res/xml/config.xml" parent="/*">
+			<feature name="SQLite" >
+				<param name="android-package" value="org.pgsqlite"/>
+			</feature>
+		</config-file>	
+        <source-file src="src/org/pgsqlite/SQLitePlugin.java" target-dir="src/org/pgsqlite" />
+    </platform>
+</plugin>
