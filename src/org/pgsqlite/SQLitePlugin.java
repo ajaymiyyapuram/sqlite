@@ -11,22 +11,14 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.File;
-
 import java.lang.Number;
 import java.lang.reflect.Method;
-
 import java.util.HashMap;
-
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
 
-import com.alpinemetrics.android.AlpineMetrics;
-import com.alpinemetrics.utilities.AlpineMetricsApplication;
-
 import android.database.Cursor;
-
 import android.database.sqlite.*;
-
 import android.util.Base64;
 import android.util.Log;
 
